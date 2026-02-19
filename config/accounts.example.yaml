@@ -1,0 +1,10 @@
+# Example account registry. Keep real secrets in vault/provider, not in git.
+accounts:
+  bank_main:
+    provider: "example-bank"
+    username_ref: "secret://bank/main/username"
+    password_ref: "secret://bank/main/password"
+
+  google_main:
+    provider: "google"
+    oauth_token_ref: "secret://google/main/oauth_token"

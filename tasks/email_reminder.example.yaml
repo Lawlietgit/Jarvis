@@ -1,0 +1,10 @@
+task_id: "send-summary-and-remind"
+kind: "email_and_reminder"
+account: "google_main"
+params:
+  to: "me@example.com"
+  subject: "Weekly application follow-up"
+  body_template: "templates/followup.md"
+  remind_at: "2026-02-20T09:00:00-08:00"
+policy:
+  require_confirmation: true
