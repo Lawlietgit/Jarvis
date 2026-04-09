@@ -9,10 +9,10 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
-    "rootDir": "src",
+    "rootDir": ".",
     "outDir": "dist",
     "types": ["node", "vitest/globals"]
   },
-  "include": ["src", "tests"],
+  "include": ["src", "tests", "vitest.config.ts"],
   "exclude": ["dist", "node_modules"]
 }

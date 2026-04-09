@@ -1,0 +1,36 @@
+emails:
+  - message_id: msg-1001
+    received_at: 2026-03-21T10:05:00-04:00
+    from: completed@docusign.net
+    subject: "Signed renewal package for 101 Oak Street"
+    property_id: oak-101
+    category: lease_attachment
+    summary: Signed extension PDF delivered by email after DocuSign completion.
+    extracted_lease:
+      lease_end: "2027-05-31"
+      monthly_rent: 2525
+      signed_at: 2026-03-20T17:15:00-04:00
+
+  - message_id: msg-2001
+    received_at: 2026-03-25T09:15:00-04:00
+    from: ben@example.com
+    subject: "Re: 204 Pine Avenue renewal timing"
+    property_id: pine-204
+    category: renewal_discussion
+    summary: Tenant asked whether a one-year extension can start in May with unchanged move-out terms.
+
+  - message_id: msg-3001
+    received_at: 2026-03-27T08:45:00-04:00
+    from: renewals@northstarpm.example
+    subject: "Cedar Lane renewal discussion started"
+    property_id: cedar-12
+    category: manager_update
+    summary: Manager confirmed they are discussing a 12-month renewal with the tenant.
+
+  - message_id: msg-4001
+    received_at: 2026-03-18T14:20:00-04:00
+    from: accounts@harborresidential.example
+    subject: "Need the latest lease date for Maple Court"
+    property_id: maple-7
+    category: manager_update
+    summary: Manager requested time to locate the latest signed lease in their system.

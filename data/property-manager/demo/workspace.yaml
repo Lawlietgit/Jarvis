@@ -1,0 +1,120 @@
+portfolioName: Jarvis Property Manager
+operatorName: Qili
+storageRoot: storage/property-manager
+generatedAt: 2026-04-09T08:30:00-04:00
+properties:
+  - propertyId: elm-2a
+    label: Elm Grove Unit 2A
+    address: 242 Elm Grove Avenue, Unit 2A
+    tenantName: Maya Thompson
+    tenantEmail: maya@example.com
+    managementMode: self_managed
+    currentLease:
+      leaseId: lease-elm-2025
+      fileName: elm-2a-2025-renewal.pdf
+      storagePath: storage/property-manager/leases/elm-2a/lease-elm-2025.pdf
+      uploadedAt: 2025-05-02T15:00:00-04:00
+      analyzedAt: 2026-04-07T10:40:00-04:00
+      leaseStart: 2025-06-01
+      leaseEnd: 2026-05-31
+      monthlyRent: 2650
+      securityDeposit: 2650
+      extractionConfidence: 0.96
+    rentLedger:
+      currentMonth: 2026-04
+      amountDue: 2650
+      amountPaid: 1400
+      status: partial
+      lastPaymentAt: 2026-04-05T09:20:00-04:00
+      note: Tenant paid the first half and said the balance lands after the 15th.
+    extensionPlan:
+      status: review_ready
+      targetTermMonths: 12
+      recommendedMonthlyRent: 2775
+      rationale: Current lease expires in under 60 days and tenant is still engaged. Prepare a 12-month extension with a moderate rent bump.
+      draftStoragePath: storage/property-manager/drafts/elm-2a-extension-2026.md
+
+  - propertyId: river-3b
+    label: River Park 3B
+    address: 91 River Park Drive, Unit 3B
+    tenantName: Andre Lewis
+    tenantEmail: andre@example.com
+    managementMode: self_managed
+    currentLease:
+      leaseId: lease-river-2026
+      fileName: river-3b-2026-lease.pdf
+      storagePath: storage/property-manager/leases/river-3b/lease-river-2026.pdf
+      uploadedAt: 2026-01-10T13:15:00-05:00
+      analyzedAt: 2026-04-03T11:00:00-04:00
+      leaseStart: 2026-02-01
+      leaseEnd: 2027-01-31
+      monthlyRent: 2350
+      securityDeposit: 2350
+      extractionConfidence: 0.93
+    rentLedger:
+      currentMonth: 2026-04
+      amountDue: 2350
+      amountPaid: 2350
+      status: full
+      lastPaymentAt: 2026-04-02T08:10:00-04:00
+      note: Paid on time by ACH.
+    extensionPlan:
+      status: not_needed
+      rationale: Lease is not near expiration. No extension draft needed yet.
+
+  - propertyId: harbor-5c
+    label: Harbor Flat 5C
+    address: 12 Harbor Street, Unit 5C
+    tenantName: Nina Ortega
+    managementMode: third_party
+    currentLease:
+      leaseId: lease-harbor-2025
+      fileName: harbor-5c-base-lease.pdf
+      storagePath: storage/property-manager/leases/harbor-5c/lease-harbor-2025.pdf
+      uploadedAt: 2025-08-18T17:00:00-04:00
+      analyzedAt: 2026-04-06T16:20:00-04:00
+      leaseStart: 2025-09-01
+      leaseEnd: 2026-08-31
+      monthlyRent: 2900
+      securityDeposit: 2900
+      extractionConfidence: 0.91
+    rentLedger:
+      currentMonth: 2026-04
+      amountDue: 2900
+      amountPaid: 0
+      status: unpaid
+      note: Awaiting payment update from property manager.
+    extensionPlan:
+      status: awaiting_decision
+      targetTermMonths: 12
+      recommendedMonthlyRent: 3025
+      rationale: Managed property. Keep the draft ready, but wait for the manager's payment and renewal update before sending.
+      draftStoragePath: storage/property-manager/drafts/harbor-5c-extension-2026.md
+documentInbox:
+  - documentId: doc-001
+    fileName: elm-2a-signed-renewal-scan.pdf
+    storagePath: storage/property-manager/inbox/2026/04/elm-2a-signed-renewal-scan.pdf
+    uploadedAt: 2026-04-08T19:00:00-04:00
+    reviewStatus: needs_review
+    suggestedPropertyId: elm-2a
+    extractedSummary: Appears to be a signed lease extension with a rent line of $2,775 and term end 2027-05-31.
+  - documentId: doc-002
+    fileName: harbor-5c-manager-note.pdf
+    storagePath: storage/property-manager/inbox/2026/04/harbor-5c-manager-note.pdf
+    uploadedAt: 2026-04-04T14:12:00-04:00
+    reviewStatus: inbox
+    suggestedPropertyId: harbor-5c
+    extractedSummary: Manager-uploaded memo. Not yet classified as a lease document.
+tasks:
+  - taskId: task-001
+    title: Review Elm Grove renewal PDF and replace the older approved lease if confirmed
+    priority: high
+    status: open
+  - taskId: task-002
+    title: Record Harbor Flat April payment status after manager update
+    priority: high
+    status: blocked
+  - taskId: task-003
+    title: Finalize Elm Grove extension draft before April 20
+    priority: medium
+    status: open

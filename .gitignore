@@ -5,3 +5,5 @@ coverage/
 .env
 *.log
 artifacts/
+data/runtime/
+storage/**/*.pdf

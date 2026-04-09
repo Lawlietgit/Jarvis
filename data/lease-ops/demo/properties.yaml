@@ -1,0 +1,36 @@
+properties:
+  - property_id: oak-101
+    address: 101 Oak Street
+    tenant_name: Alice Chen
+    tenant_email: alice@example.com
+    management_mode: self_managed
+    current_lease_end: "2026-05-31"
+    current_rent: 2400
+    notice_days: 60
+
+  - property_id: pine-204
+    address: 204 Pine Avenue
+    tenant_name: Ben Carter
+    tenant_email: ben@example.com
+    management_mode: self_managed
+    current_lease_end: "2026-04-30"
+    current_rent: 2200
+    notice_days: 60
+
+  - property_id: cedar-12
+    address: 12 Cedar Lane
+    tenant_name: Maya Patel
+    management_mode: third_party
+    manager_name: Northstar Property Management
+    manager_email: renewals@northstarpm.example
+    current_lease_end: "2026-04-15"
+    current_rent: 2650
+    notice_days: 75
+
+  - property_id: maple-7
+    address: 7 Maple Court
+    tenant_name: Leo Alvarez
+    management_mode: third_party
+    manager_name: Harbor Residential
+    manager_email: accounts@harborresidential.example
+    notice_days: 60

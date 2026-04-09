@@ -1,0 +1,28 @@
+envelopes:
+  - envelope_id: env-1001
+    property_id: oak-101
+    title: "Oak Street 2026 Renewal"
+    status: completed
+    document_type: lease_extension
+    updated_at: 2026-03-20T17:15:00-04:00
+    completed_at: 2026-03-20T17:15:00-04:00
+    lease_end: "2027-05-31"
+    monthly_rent: 2525
+
+  - envelope_id: env-2001
+    property_id: pine-204
+    title: "Pine Avenue 2026 Renewal Draft"
+    status: draft
+    document_type: lease_extension
+    updated_at: 2026-03-26T11:30:00-04:00
+    lease_end: "2027-04-30"
+    monthly_rent: 2250
+
+  - envelope_id: env-3001
+    property_id: cedar-12
+    title: "Cedar Lane renewal packet"
+    status: sent
+    document_type: lease_extension
+    updated_at: 2026-03-28T15:00:00-04:00
+    lease_end: "2027-04-15"
+    monthly_rent: 2725

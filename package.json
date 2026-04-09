@@ -1,14 +1,20 @@
 {
-  "name": "jarvis-openclaw-automation",
+  "name": "jarvis-automation",
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "Task orchestration scaffold for OpenClaw-style web automations",
+  "description": "Automation workspace for personal operations workflows",
   "scripts": {
     "build": "tsc -p tsconfig.json",
-    "dev": "tsx src/index.ts run tasks/download_to_sheet.example.yaml --dry-run",
-    "start": "node --enable-source-maps dist/index.js",
-    "test": "vitest run",
+    "lease:audit": "npm run build --silent && node dist/src/index.js lease-audit data/lease-ops/demo --write-report",
+    "lease:audit:json": "npm run build --silent && node dist/src/index.js lease-audit data/lease-ops/demo --json",
+    "lease:discover": "npm run build --silent && node dist/src/index.js lease-discover data/lease-ops/demo --db data/runtime/jarvis.sqlite --write-report",
+    "lease:review": "npm run build --silent && node dist/src/index.js lease-review --db data/runtime/jarvis.sqlite --write-report",
+    "property:dashboard": "npm run build --silent && node dist/src/index.js property-dashboard data/property-manager/demo/workspace.yaml --write-report",
+    "property:json": "npm run build --silent && node dist/src/index.js property-dashboard data/property-manager/demo/workspace.yaml --json",
+    "web": "npm run build --silent && node dist/src/server/startServer.js",
+    "start": "node --enable-source-maps dist/src/index.js",
+    "test": "npm run build --silent && vitest run",
     "test:watch": "vitest"
   },
   "dependencies": {
